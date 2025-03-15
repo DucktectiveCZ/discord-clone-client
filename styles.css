@@ -1,0 +1,132 @@
+/* Sidebar - Left Panel */
+.highlights {
+    background-color: linear-grandient(to right, #291749, #1f1137);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 5%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Buttons inside sidebar */
+.server-button, .server-add {
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    display: block;
+}
+
+/* Fixing button positions */
+.server-button {
+    background-image: url("https://cdn.discordapp.com/attachments/1242859528953794732/1350505112786833518/TAY.jpg?ex=67d6fb66&is=67d5a9e6&hm=11abe9bc03a93a2a2566031eee422e6c28994dd20b901e2811db9ef6bf1765e5&");
+}
+
+.server-add {
+    background-color: #341d5c;
+    font-size: 30px;
+    font-weight: 50;
+    color: #ffffff;
+}
+
+.highlights2 {
+    color: #ffffff;
+    background-color: #291749;
+    font-size: 16px;
+    font-weight: 50;
+    border-radius: 5px;
+
+    /* Fix height */
+    height: 100%;
+
+    font-family: 'Noto Sans', sans-serif;
+
+    /* Proper text alignment */
+    display: block;  /* No flexbox */
+    padding: 10px;  /* Space inside from edges */
+
+    /* Prevent text from going outside */
+    overflow: hidden;
+    word-wrap: break-word;
+
+    /* Positioning */
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 20%;
+}
+
+.chat-bar {
+    color: #ffffff;
+    background-color: #3e236e;
+    font-size: 16px;
+    font-weight: 50;
+    border-radius: 5px;
+
+    border: none;
+    outline: none;
+
+    font-family: 'Noto Sans', sans-serif;
+
+    height: 40px;
+    display: flex;
+    align-items: center;  /* Centers vertically */
+    padding-left: 15px;   /* Moves text inside from left */
+
+    /* Positioning */
+    position: fixed;
+    bottom: 10px;  /* Moves it to bottom instead of 'top: 91%' */
+    left: 10%;
+    width: 60%;
+}
+
+#users {
+    background-image: linear-gradient(to right, #291749, #150c25);
+}
+#servers {
+    background-image: linear-gradient(to left, #291749, #150c25);
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #341d5c;
+    color: #ffffff;
+}
+header {
+    background-color: #f072f7;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+nav {
+    margin: 10px 0;
+    text-align: center;
+}
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #e37cf1;
+    font-weight: bold;
+}
+section {
+    padding: 20px;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
