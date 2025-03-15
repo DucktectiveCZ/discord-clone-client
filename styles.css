@@ -191,6 +191,102 @@
     height: 10%;
 }
 
+.login-password {
+    color: #ffffff;
+    background-color: #3e236e;
+    font-size: 16px;
+    font-weight: 50;   
+    border-radius: 5px;
+    
+    border: none;
+    outline: none;
+    
+    font-family: 'Noto Sans', sans-serif;
+    
+    height: 40px; 
+    display: flex;
+    align-items: center;  /* Centers vertically */
+    padding-left: 15px;   /* Moves text inside from left */
+    
+    /* Positioning */
+    position: fixed;
+    top: 50%;  /* Moves it to bottom instead of 'top: 91%' */
+    left: 10%;
+    width: 80%;
+    height: 10%;
+}
+
+.login-user{
+    color: #ffffff;
+    background-color: #3e236e;
+    font-size: 16px;
+    font-weight: 50;   
+    border-radius: 5px;
+    
+    border: none;
+    outline: none;
+    
+    font-family: 'Noto Sans', sans-serif;
+    
+    height: 10%; 
+    display: flex;
+    align-items: center;  /* Centers vertically */
+    padding-left: 15px;   /* Moves text inside from left */
+    
+    /* Positioning */
+    position: fixed;
+    top: 30%;  
+    left: 10%;
+    width: 80%;
+}
+
+.done-button {
+    width: 80%;
+    height: 50px;
+    border: none;
+    background-color: #150c25;
+    color: #ffffff;
+    font-weight: bold;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10%;
+    display: block;
+    position: fixed;
+    bottom: 10%;  /* Change 'top: 80%' to 'bottom: 10%' */
+    left: 10%;
+    
+    border-radius: 4px;
+    text-align: center;
+    transition: all 0.5s;
+    cursor: pointer;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0, .7);
+}
+
+
+.done-button:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;  
+    top: 14px;
+    right: -20px;
+    transition: 0.5s;
+  }
+
+.done-button:hover{
+    padding-right: 24px;
+    padding-left:8px;
+  }
+
+.done-button:hover:after {
+    opacity: 1;
+    right: 10px;
+  }
+
+
+
+
+
 body {
     font-family: 'Noto Sans', sans-serif;
     margin: 0;
