@@ -46,17 +46,17 @@
 
     /* Fix height */
     height: 100%;
-
+    
     font-family: 'Noto Sans', sans-serif;
 
     /* Proper text alignment */
     display: block;  /* No flexbox */
     padding: 10px;  /* Space inside from edges */
-
+    
     /* Prevent text from going outside */
     overflow: hidden;
     word-wrap: break-word;
-
+    
     /* Positioning */
     position: fixed;
     top: 0;
@@ -64,23 +64,25 @@
     width: 20%;
 }
 
+
+
 .chat-bar {
     color: #ffffff;
     background-color: #3e236e;
     font-size: 16px;
-    font-weight: 50;
+    font-weight: 50;   
     border-radius: 5px;
-
+    
     border: none;
     outline: none;
-
+    
     font-family: 'Noto Sans', sans-serif;
-
-    height: 40px;
+    
+    height: 40px; 
     display: flex;
     align-items: center;  /* Centers vertically */
     padding-left: 15px;   /* Moves text inside from left */
-
+    
     /* Positioning */
     position: fixed;
     bottom: 10px;  /* Moves it to bottom instead of 'top: 91%' */
@@ -88,11 +90,105 @@
     width: 60%;
 }
 
+
+
 #users {
     background-image: linear-gradient(to right, #291749, #150c25);
 }
 #servers {
     background-image: linear-gradient(to left, #291749, #150c25);
+}
+
+
+.chat-input::placeholder {
+    color: #888;
+    font-style: italic;
+    opacity: 1; 
+  }
+  
+
+
+.headline{
+    font-family: 'Noto Sans', sans-serif;
+    position: fixed;
+    top: 0;
+    right: 40%;
+    width: 20%;
+}
+
+.user {
+    color: #ffffff;
+    background-color: #3e236e;
+    font-size: 16px;
+    font-weight: 50;   
+    border-radius: 5px;
+    
+    border: none;
+    outline: none;
+    
+    font-family: 'Noto Sans', sans-serif;
+    
+    height: 10%; 
+    display: flex;
+    align-items: center;  /* Centers vertically */
+    padding-left: 15px;   /* Moves text inside from left */
+    
+    /* Positioning */
+    position: fixed;
+    top: 20%;  /* Moves it to bottom instead of 'top: 91%' */
+    left: 10%;
+    width: 80%;
+}
+
+
+.nick {
+    color: #ffffff;
+    background-color: #3e236e;
+    font-size: 16px;
+    font-weight: 50;   
+    border-radius: 5px;
+    
+    border: none;
+    outline: none;
+    
+    font-family: 'Noto Sans', sans-serif;
+    
+    height: 40px; 
+    display: flex;
+    align-items: center;  /* Centers vertically */
+    padding-left: 15px;   /* Moves text inside from left */
+    
+    /* Positioning */
+    position: fixed;
+    top: 40%;  /* Moves it to bottom instead of 'top: 91%' */
+    left: 10%;
+    width: 80%;
+    height: 10%;
+}
+
+.password {
+    color: #ffffff;
+    background-color: #3e236e;
+    font-size: 16px;
+    font-weight: 50;   
+    border-radius: 5px;
+    
+    border: none;
+    outline: none;
+    
+    font-family: 'Noto Sans', sans-serif;
+    
+    height: 40px; 
+    display: flex;
+    align-items: center;  /* Centers vertically */
+    padding-left: 15px;   /* Moves text inside from left */
+    
+    /* Positioning */
+    position: fixed;
+    top: 60%;  /* Moves it to bottom instead of 'top: 91%' */
+    left: 10%;
+    width: 80%;
+    height: 10%;
 }
 
 body {
