@@ -35,7 +35,7 @@ body.theme-rainbow{
     --done-button: #ff5cf4;
     --all-channels: #ff9bf8;
     --channels: #ff9bf8;
-    --body-image: url("https://i.pinimg.com/736x/31/ee/81/31ee8131f59fd3678f623b897456f676.jpg");
+    --body-color: #CBE8FD;
     --users-gradient: linear-gradient(to right, #ff6262, #ffa662, #ffed62, #87ff62, #62b8ff, #b186fc);
     --channels-gradient: linear-gradient(to left, #ff6262,  #ffa662, #ffed62, #87ff62, #62b8ff, #b186fc);
 }
