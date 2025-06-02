@@ -21,8 +21,8 @@
 
 
 /* rainbow theme */
-body.theme-rainbow{
-    --button-bg: url("https://i.pinimg.com/736x/90/9a/60/909a60a5ac388d11d582c487a81f6a9d.jpg");
+body.theme-rainbow {
+    --button-bg: url("https://i.pinimg.com/736x/51/b5/fe/51b5fec7ffc14b2e4b635da3baf88cf4.jpg");
     --server-add: #ff9bf8;
     --highlights1: #b186fc;
     --highlights2: #ff6262;
@@ -35,7 +35,7 @@ body.theme-rainbow{
     --done-button: #ff5cf4;
     --all-channels: #ff9bf8;
     --channels: #ff9bf8;
-    --body-color: #CBE8FD;
+    --body-color: #cbe8fd;
     --users-gradient: linear-gradient(to right, #ff6262, #ffa662, #ffed62, #87ff62, #62b8ff, #b186fc);
     --channels-gradient: linear-gradient(to left, #ff6262,  #ffa662, #ffed62, #87ff62, #62b8ff, #b186fc);
 }
