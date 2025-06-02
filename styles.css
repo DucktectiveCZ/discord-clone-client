@@ -14,7 +14,7 @@
     --done-button: #150c25;
     --all-channels: #291749;
     --channels: #150c25;
-    --body: #341d5c;
+    --body-color: #341d5c;
     --users-gradient: linear-gradient(to right, #291749, #150c25);
     --channels-gradient: linear-gradient(to left, #291749, #150c25);
 }
@@ -35,7 +35,7 @@ body.theme-rainbow{
     --done-button: #ff5cf4;
     --all-channels: #ff9bf8;
     --channels: #ff9bf8;
-    --body: url("https://i.pinimg.com/736x/31/ee/81/31ee8131f59fd3678f623b897456f676.jpg");
+    --body-image: url("https://i.pinimg.com/736x/31/ee/81/31ee8131f59fd3678f623b897456f676.jpg");
     --users-gradient: linear-gradient(to right, #ff6262, #ffa662, #ffed62, #87ff62, #62b8ff, #b186fc);
     --channels-gradient: linear-gradient(to left, #ff6262,  #ffa662, #ffed62, #87ff62, #62b8ff, #b186fc);
 }
@@ -137,11 +137,11 @@ body.theme-rainbow{
 
 
 #users {
-    background-image: var(--users-gradient)
+    background: var(--users-gradient)
 }
 
 #channels {
-    background-image: var(--channels-gradient);
+    background: var(--channels-gradient);
 }
 
 
@@ -409,9 +409,9 @@ body {
     font-family: 'Noto Sans', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: var(--body);
+    background-color: var(--body-color);
     color: #ffffff;
-    background-image: var(--body);
+    background-image: var(--body-image);
 }
 header {
     background-color: #f072f7;
