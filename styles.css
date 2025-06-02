@@ -411,7 +411,6 @@ body {
     padding: 0;
     background-color: var(--body-color);
     color: #ffffff;
-    background-image: var(--body-image);
 }
 header {
     background-color: #f072f7;
