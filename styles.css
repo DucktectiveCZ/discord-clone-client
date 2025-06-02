@@ -54,9 +54,9 @@ body.theme-dark {
     --done-button: #212121;
     --all-channels: #323232;
     --channels: #323232;
-    --body-color: #131313;
-    --users-gradient: linear-gradient(to right, #131313, #000000);
-    --channels-gradient: linear-gradient(to left, #131313,  #000000);
+    --body-color: #131311;
+    --users-gradient: linear-gradient(to right, #000000, #131313);
+    --channels-gradient: linear-gradient(to left, #000000,  #131313);
 }
 
 
