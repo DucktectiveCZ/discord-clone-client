@@ -40,6 +40,24 @@ body.theme-rainbow {
     --channels-gradient: linear-gradient(to left, #ff6262,  #ffa662, #ffed62, #87ff62, #62b8ff, #b186fc);
 }
 
+body.theme-dark {
+    --button-bg: url("https://i.pinimg.com/736x/27/96/82/279682c9693b934075b5bd0eeb9a34ed.jpg");
+    --server-add: #323232;
+    --highlights1: #131313;
+    --highlights2: #000000;
+    --chat-bar: #323232;
+    --user: #323232;
+    --nick: #323232;
+    --password: #323232;
+    --login-password: #323232;
+    --login-user: #323232;
+    --done-button: #212121;
+    --all-channels: #323232;
+    --channels: #323232;
+    --body-color: #2a2a2a;
+    --users-gradient: linear-gradient(to right, #000000, #131313);
+    --channels-gradient: linear-gradient(to left, #000000,  #131313);
+}
 
 
 .highlights {
