@@ -60,9 +60,9 @@ body.theme-dark {
 }
 
 body.theme-duk {
-    --button-bg: url("https://cdn.discordapp.com/attachments/1301576698529058858/1379027817508896849/image.jpg?ex=683ebf3c&is=683d6dbc&hm=8cc6ca8d30aca39583ee4ef630a0374c29180441731db74129fad9daf4b4cdec&");
+    --button-bg: url("https://i.pinimg.com/736x/08/f5/0c/08f50cf0aac443c1d939bde736eae704.jpg");
     --server-add: #C9F3FF;
-    --highlights1: #b0eeff;
+    --highlights1: #8CCBEA;
     --highlights2: #C9F3FF;
     --chat-bar: #99e7fd;
     --user: #99e7fd;
@@ -74,9 +74,9 @@ body.theme-duk {
     --all-channels: #99e7fd;
     --channels: #99e7fd;
    /* --body-color: #77e1ff;*/
-    --body-image: url("https://cdn.discordapp.com/attachments/1301576698529058858/1379026560962789386/Screenshot_2025-06-02_at_11.18.18.png?ex=683ebe11&is=683d6c91&hm=ae12c5445a24aa1f0ae2d39988e60adb68874099e2918e31b9970f13d434eef1&");
-    --users-gradient: linear-gradient(to right, #C9F3FF, #b0eeff);
-    --channels-gradient: linear-gradient(to left, #C9F3FF,  #b0eeff);
+    --body-image: url("https://cdn.discordapp.com/attachments/1301576698529058858/1379027817508896849/image.jpg?ex=683ebf3c&is=683d6dbc&hm=8cc6ca8d30aca39583ee4ef630a0374c29180441731db74129fad9daf4b4cdec&");
+    --users-gradient: linear-gradient(to right, #8CCBEA, #C9F3FF);
+    --channels-gradient: linear-gradient(to left, #8CCBEA,  #C9F3FF);
 }
 
 .highlights {
