@@ -23,6 +23,7 @@
 /* rainbow theme */
 body.theme-rainbow{
     --button-bg: url("https://i.pinimg.com/736x/90/9a/60/909a60a5ac388d11d582c487a81f6a9d.jpg");
+    --server-add: #ff9bf8;
     --highlights1: #b186fc;
     --highlights2: #ff6262;
     --chat-bar: #ff9bf8;
@@ -35,8 +36,8 @@ body.theme-rainbow{
     --all-channels: #ff9bf8;
     --channels: #ff9bf8;
     --body: url("https://i.pinimg.com/736x/31/ee/81/31ee8131f59fd3678f623b897456f676.jpg");
-    --users-gradient: linear-gradient(to right, #ff6262, #b186fc);
-    --channels-gradient: linear-gradient(to left, #ff6262, #b186fc);
+    --users-gradient: linear-gradient(to right, #ff6262, #ffa662, #ffed62, #87ff62, #62b8ff, #b186fc);
+    --channels-gradient: linear-gradient(to left, #ff6262,  #ffa662, #ffed62, #87ff62, #62b8ff, #b186fc);
 }
 
 
@@ -410,6 +411,7 @@ body {
     padding: 0;
     background-color: var(--body);
     color: #ffffff;
+    background-image: var(--body);
 }
 header {
     background-color: #f072f7;
