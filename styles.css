@@ -1,6 +1,89 @@
-/* Sidebar - Left Panel */
+
+/* default thingys, defining the variables and giving them values */
+:root {
+    --button-bg: url("https://i.pinimg.com/736x/e1/7e/d1/e17ed16c4780bdd5dc791dac1862e40e.jpg");
+    --server-add: #341d5c;
+    --highlights1: #150c25;
+    --highlights2: #291749;
+    --chat-bar: #3e236e;
+    --user: #3e236e;
+    --nick: #3e236e;
+    --password: #3e236e;
+    --login-password: #3e236e;
+    --login-user: #3e236e;
+    --done-button: #150c25;
+    --all-channels: #291749;
+    --channels: #150c25;
+    --body-color: #341d5c;
+    --users-gradient: linear-gradient(to right, #291749, #150c25);
+    --channels-gradient: linear-gradient(to left, #291749, #150c25);
+}
+
+
+/* rainbow theme */
+body.theme-rainbow {
+    --button-bg: url("https://i.pinimg.com/736x/51/b5/fe/51b5fec7ffc14b2e4b635da3baf88cf4.jpg");
+    --server-add: #ff9bf8;
+    --highlights1: #b186fc;
+    --highlights2: #ff6262;
+    --chat-bar: #ff9bf8;
+    --user: #ff9bf8;
+    --nick: #ff9bf8;
+    --password: #ff9bf8;
+    --login-password: #ff9bf8;
+    --login-user: #ff9bf8;
+    --done-button: #ff5cf4;
+    --all-channels: #ff9bf8;
+    --channels: #ff9bf8;
+    --body-color: #cbe8fd;
+    --users-gradient: linear-gradient(to right, #ff6262, #ffa662, #ffed62, #87ff62, #62b8ff, #b186fc);
+    --channels-gradient: linear-gradient(to left, #ff6262,  #ffa662, #ffed62, #87ff62, #62b8ff, #b186fc);
+}
+
+/* dark theme */
+body.theme-dark {
+    --button-bg: url("https://i.pinimg.com/736x/27/96/82/279682c9693b934075b5bd0eeb9a34ed.jpg");
+    --server-add: #323232;
+    --highlights1: #131313;
+    --highlights2: #000000;
+    --chat-bar: #323232;
+    --user: #323232;
+    --nick: #323232;
+    --password: #323232;
+    --login-password: #323232;
+    --login-user: #323232;
+    --done-button: #212121;
+    --all-channels: #323232;
+    --channels: #323232;
+    --body-color: #131311;
+    --users-gradient: linear-gradient(to right, #000000, #131313);
+    --channels-gradient: linear-gradient(to left, #000000,  #131313);
+}
+
+/* duk theme */
+body.theme-duk {
+    --button-bg: url("https://i.pinimg.com/736x/08/f5/0c/08f50cf0aac443c1d939bde736eae704.jpg");
+    --server-add: #C9F3FF;
+    --highlights1: #8CCBEA;
+    --highlights2: #C9F3FF;
+    --chat-bar: #99e7fd;
+    --user: #99e7fd;
+    --nick: #99e7fd;
+    --password: #99e7fd;
+    --login-password: #99e7fd;
+    --login-user: #99e7fd;
+    --done-button: #27d0ff;
+    --all-channels: #99e7fd;
+    --channels: #99e7fd;
+   /* --body-color: #77e1ff;*/
+    --body-image: url("https://cdn.discordapp.com/attachments/1301576698529058858/1379027817508896849/image.jpg?ex=683ebf3c&is=683d6dbc&hm=8cc6ca8d30aca39583ee4ef630a0374c29180441731db74129fad9daf4b4cdec&");
+    --users-gradient: linear-gradient(to right, #8CCBEA, #C9F3FF);
+    --channels-gradient: linear-gradient(to left, #8CCBEA,  #C9F3FF);
+}
+
+/* the thingy beneath the servers */
 .highlights {
-    background-color: #150c25;
+    background-color: var(--highlights1); /* uses variable */
     position: fixed;
     top: 0;
     left: 0;
@@ -25,33 +108,35 @@
     display: block;
 }
 
-/* Fixing button positions */
+/* button positions */
 .server-button {
-    background-image: url("https://cdn.discordapp.com/attachments/1242859528953794732/1350505112786833518/TAY.jpg?ex=67d6fb66&is=67d5a9e6&hm=11abe9bc03a93a2a2566031eee422e6c28994dd20b901e2811db9ef6bf1765e5&");
+    background-image: var(--button-bg);
 }
 
+
 .server-add {
-    background-color: #341d5c;
+    background-color: var(--server-add);
     font-size: 30px;
     font-weight: 50;
     color: #ffffff;
 }
 
+/* thingy beneath channels, next to server bar thingy */
 .highlights2 {
     color: #ffffff;
-    background-color: #291749;
+    background-color: var(--highlights2);
     font-size: 16px;
     font-weight: 50;
     border-radius: 5px;
 
-    /* Fix height */
+    
     height: 100%;
     
     font-family: 'Noto Sans', sans-serif;
 
     /* Proper text alignment */
-    display: block;  /* No flexbox */
-    padding: 10px;  /* Space inside from edges */
+    display: block;  
+    padding: 10px;  
     
     /* Prevent text from going outside */
     overflow: hidden;
@@ -64,11 +149,11 @@
     width: 20%;
 }
 
-
+/* chat bar. yep. thats it xd */
 
 .chat-bar {
     color: #ffffff;
-    background-color: #3e236e;
+    background-color: var(--chat-bar);
     font-size: 16px;
     font-weight: 50;   
     border-radius: 5px;
@@ -80,34 +165,36 @@
     
     height: 40px; 
     display: flex;
-    align-items: center;  /* Centers vertically */
+    align-items: center; 
     padding-left: 15px;   /* Moves text inside from left */
     
     /* Positioning */
     position: fixed;
-    bottom: 10px;  /* Moves it to bottom instead of 'top: 91%' */
+    bottom: 10px;  
     left: 27%;
     width: 47%;
 }
 
-
+/* this is the gradients thingy which displays them ya */
 
 #users {
-    background-image: linear-gradient(to right, #291749, #150c25);
+    background: var(--users-gradient)
 }
+
 #channels {
-    background-image: linear-gradient(to left, #291749, #150c25);
+    background: var(--channels-gradient);
 }
 
-
+/* placeholder inside of the chat bar */
 .chat-input::placeholder {
     color: #888;
     font-style: italic;
     opacity: 1; 
-  }
+}
   
 
 
+/* style of headlines */
 .headline{
     font-family: 'Noto Sans', sans-serif;
     position: fixed;
@@ -116,9 +203,10 @@
     width: 20%;
 }
 
+/* the user profile thingy on the right */ 
 .user {
     color: #ffffff;
-    background-color: #3e236e;
+    background-color: var(--user);
     font-size: 16px;
     font-weight: 50;   
     border-radius: 5px;
@@ -140,10 +228,10 @@
     width: 80%;
 }
 
-
+/* register nickname line thingy */
 .nick {
     color: #ffffff;
-    background-color: #3e236e;
+    background-color: var(--nick);
     font-size: 16px;
     font-weight: 50;   
     border-radius: 5px;
@@ -155,20 +243,21 @@
     
     height: 40px; 
     display: flex;
-    align-items: center;  /* Centers vertically */
+    align-items: center;  
     padding-left: 15px;   /* Moves text inside from left */
     
     /* Positioning */
     position: fixed;
-    top: 40%;  /* Moves it to bottom instead of 'top: 91%' */
+    top: 40%;  
     left: 10%;
     width: 80%;
     height: 10%;
 }
 
+/* register password line thingy */
 .password {
     color: #ffffff;
-    background-color: #3e236e;
+    background-color: var(--password);
     font-size: 16px;
     font-weight: 50;   
     border-radius: 5px;
@@ -180,20 +269,21 @@
     
     height: 40px; 
     display: flex;
-    align-items: center;  /* Centers vertically */
+    align-items: center; 
     padding-left: 15px;   /* Moves text inside from left */
     
     /* Positioning */
     position: fixed;
-    top: 60%;  /* Moves it to bottom instead of 'top: 91%' */
+    top: 60%;  
     left: 10%;
     width: 80%;
     height: 10%;
 }
 
+/* login password line thingy */
 .login-password {
     color: #ffffff;
-    background-color: #3e236e;
+    background-color: var(--login-password);
     font-size: 16px;
     font-weight: 50;   
     border-radius: 5px;
@@ -205,20 +295,21 @@
     
     height: 40px; 
     display: flex;
-    align-items: center;  /* Centers vertically */
-    padding-left: 15px;   /* Moves text inside from left */
+    align-items: center;  
+    padding-left: 15px;  
     
     /* Positioning */
     position: fixed;
-    top: 50%;  /* Moves it to bottom instead of 'top: 91%' */
+    top: 50%;  
     left: 10%;
     width: 80%;
     height: 10%;
 }
 
+/* login username line thingy */
 .login-user{
     color: #ffffff;
-    background-color: #3e236e;
+    background-color: var(--login-user);
     font-size: 16px;
     font-weight: 50;   
     border-radius: 5px;
@@ -230,7 +321,7 @@
     
     height: 10%; 
     display: flex;
-    align-items: center;  /* Centers vertically */
+    align-items: center;  
     padding-left: 15px;   /* Moves text inside from left */
     
     /* Positioning */
@@ -240,11 +331,12 @@
     width: 80%;
 }
 
+/* done button for register and login */
 .done-button {
     width: 80%;
     height: 50px;
     border: none;
-    background-color: #150c25;
+    background-color: var(--done-button);
     color: #ffffff;
     font-weight: bold;
     background-size: cover;
@@ -253,7 +345,7 @@
     border-radius: 10%;
     display: block;
     position: fixed;
-    bottom: 10%;  /* Change 'top: 80%' to 'bottom: 10%' */
+    bottom: 10%;  
     left: 10%;
     
     border-radius: 4px;
@@ -264,6 +356,7 @@
 }
 
 
+/* done button animation stuff */
 .done-button:after {
     content: '»';
     position: absolute;
@@ -283,8 +376,9 @@
     right: 10px;
   }
 
+/* the channels stuff */
 .channels{
-    background-color: #150c25;
+    background-color: var(--channels);
     position: fixed;
     top: 0;
     left: 6%;
@@ -297,7 +391,7 @@
     gap: 10px;
 }
 
-
+/* every channel, position */
 .channel1{
     top: 3%;  
     left: 7%;
@@ -338,11 +432,12 @@
     left: 7%;
 }
 
+/* all channels stuff */
 .channel1, .channel2, .channel3, .channel4, .channel5, .channel6, .channel7, .channel8{
     width: 15%;
     height: 50px;
     border: none;
-    background-color: #291749;
+    background-color: var(--all-channels);
     color: #ffffff;
     image-resolution: 50px;
     font-weight: 50;
@@ -360,13 +455,17 @@
     box-shadow: 0 10px 20px -8px rgba(0, 0, 0, .7);
 }
 
+/* body design */
 body {
     font-family: 'Noto Sans', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #341d5c;
+    background-color: var(--body-color);
     color: #ffffff;
+    background-image: var(--body-image);
 }
+
+/* the rest is not used but we have it anyway in case we ever need it ! */
 header {
     background-color: #f072f7;
     padding: 20px;
