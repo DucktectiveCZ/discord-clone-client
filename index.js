@@ -1,4 +1,4 @@
-import * from './api.js'
+
 
 function openServer(element) {
     const match = element.id.match(/serverBtn(\d+)/);
@@ -24,3 +24,12 @@ function sendMessage() {
     ;
 }
 
+
+document.body.className = "theme-rainbow";
+document.body.className = "theme-dark";
+document.body.className = "theme-duk";
+
+//i just needa save this somewhere so i wont lose it whoopsie
+//<button onclick="document.body.className = 'theme-rainbow'">Rainbow :D</button>
+//<button onclick="document.body.className = 'theme-dark'">duk theme :D</button>
+//<button onclick="document.body.className = 'theme-duk'">duk blu theme :D</button>
