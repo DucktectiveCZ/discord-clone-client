@@ -1,5 +1,5 @@
 
-/* default thingys */
+/* default thingys, defining the variables and giving them values */
 :root {
     --button-bg: url("https://i.pinimg.com/736x/e1/7e/d1/e17ed16c4780bdd5dc791dac1862e40e.jpg");
     --server-add: #341d5c;
@@ -40,6 +40,7 @@ body.theme-rainbow {
     --channels-gradient: linear-gradient(to left, #ff6262,  #ffa662, #ffed62, #87ff62, #62b8ff, #b186fc);
 }
 
+/* dark theme */
 body.theme-dark {
     --button-bg: url("https://i.pinimg.com/736x/27/96/82/279682c9693b934075b5bd0eeb9a34ed.jpg");
     --server-add: #323232;
@@ -59,6 +60,7 @@ body.theme-dark {
     --channels-gradient: linear-gradient(to left, #000000,  #131313);
 }
 
+/* duk theme */
 body.theme-duk {
     --button-bg: url("https://i.pinimg.com/736x/08/f5/0c/08f50cf0aac443c1d939bde736eae704.jpg");
     --server-add: #C9F3FF;
@@ -79,8 +81,9 @@ body.theme-duk {
     --channels-gradient: linear-gradient(to left, #8CCBEA,  #C9F3FF);
 }
 
+/* the thingy beneath the servers */
 .highlights {
-    background-color: var(--highlights1);
+    background-color: var(--highlights1); /* uses variable */
     position: fixed;
     top: 0;
     left: 0;
@@ -118,6 +121,7 @@ body.theme-duk {
     color: #ffffff;
 }
 
+/* thingy beneath channels, next to server bar thingy */
 .highlights2 {
     color: #ffffff;
     background-color: var(--highlights2);
@@ -145,7 +149,7 @@ body.theme-duk {
     width: 20%;
 }
 
-
+/* chat bar. yep. thats it xd */
 
 .chat-bar {
     color: #ffffff;
@@ -171,7 +175,7 @@ body.theme-duk {
     width: 47%;
 }
 
-
+/* this is the gradients thingy which displays them ya */
 
 #users {
     background: var(--users-gradient)
@@ -181,15 +185,16 @@ body.theme-duk {
     background: var(--channels-gradient);
 }
 
-
+/* placeholder inside of the chat bar */
 .chat-input::placeholder {
     color: #888;
     font-style: italic;
     opacity: 1; 
-  }
+}
   
 
 
+/* style of headlines */
 .headline{
     font-family: 'Noto Sans', sans-serif;
     position: fixed;
@@ -198,6 +203,7 @@ body.theme-duk {
     width: 20%;
 }
 
+/* the user profile thingy on the right */ 
 .user {
     color: #ffffff;
     background-color: var(--user);
@@ -222,7 +228,7 @@ body.theme-duk {
     width: 80%;
 }
 
-
+/* register nickname line thingy */
 .nick {
     color: #ffffff;
     background-color: var(--nick);
@@ -248,6 +254,7 @@ body.theme-duk {
     height: 10%;
 }
 
+/* register password line thingy */
 .password {
     color: #ffffff;
     background-color: var(--password);
@@ -273,6 +280,7 @@ body.theme-duk {
     height: 10%;
 }
 
+/* login password line thingy */
 .login-password {
     color: #ffffff;
     background-color: var(--login-password);
@@ -298,6 +306,7 @@ body.theme-duk {
     height: 10%;
 }
 
+/* login username line thingy */
 .login-user{
     color: #ffffff;
     background-color: var(--login-user);
@@ -322,6 +331,7 @@ body.theme-duk {
     width: 80%;
 }
 
+/* done button for register and login */
 .done-button {
     width: 80%;
     height: 50px;
@@ -346,6 +356,7 @@ body.theme-duk {
 }
 
 
+/* done button animation stuff */
 .done-button:after {
     content: '»';
     position: absolute;
@@ -365,6 +376,7 @@ body.theme-duk {
     right: 10px;
   }
 
+/* the channels stuff */
 .channels{
     background-color: var(--channels);
     position: fixed;
@@ -379,7 +391,7 @@ body.theme-duk {
     gap: 10px;
 }
 
-
+/* every channel, position */
 .channel1{
     top: 3%;  
     left: 7%;
@@ -420,6 +432,7 @@ body.theme-duk {
     left: 7%;
 }
 
+/* all channels stuff */
 .channel1, .channel2, .channel3, .channel4, .channel5, .channel6, .channel7, .channel8{
     width: 15%;
     height: 50px;
@@ -442,6 +455,7 @@ body.theme-duk {
     box-shadow: 0 10px 20px -8px rgba(0, 0, 0, .7);
 }
 
+/* body design */
 body {
     font-family: 'Noto Sans', sans-serif;
     margin: 0;
@@ -450,6 +464,8 @@ body {
     color: #ffffff;
     background-image: var(--body-image);
 }
+
+/* the rest is not used but we have it anyway in case we ever need it ! */
 header {
     background-color: #f072f7;
     padding: 20px;
