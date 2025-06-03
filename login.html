@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-
+    <script src="login.js" defer></script>
 </head>
 <!--to switch theme manually just in the body tag: class="{theme}" -->
 <body>
@@ -14,13 +14,16 @@
         Login
     </h1>
     
-    <input class="login-user" type="password" class="chat-input" placeholder="username">  </input>
+
+
+    <input class="login-user" type="text" class="chat-input" placeholder="username" id="input_username">  </input>
     
    
     
-    <input class="login-password" type="password" class="chat-input" placeholder="password">  </input>
+    <input class="login-password" type="password" class="chat-input" placeholder="password" id="input_password">  </input>
 
-    <button class="done-button">Done</button>
+
+    <button onclick="done_button_click()" class="done-button">Done</button>
 
 
 
