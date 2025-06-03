@@ -199,11 +199,11 @@ body.theme-duk {
     font-family: 'Noto Sans', sans-serif;
     position: fixed;
     top: 0;
-    right: 40%;
+    right: 36%;
     width: 20%;
 }
 
-/* the user profile thingy on the right */ 
+
 .user {
     color: #ffffff;
     background-color: var(--user);
@@ -223,13 +223,13 @@ body.theme-duk {
     
     /* Positioning */
     position: fixed;
-    top: 20%;  /* Moves it to bottom instead of 'top: 91%' */
+    top: 15%;  /* Moves it to bottom instead of 'top: 91%' */
     left: 10%;
     width: 80%;
 }
 
 /* register nickname line thingy */
-.nick {
+.displayName {
     color: #ffffff;
     background-color: var(--nick);
     font-size: 16px;
@@ -248,7 +248,7 @@ body.theme-duk {
     
     /* Positioning */
     position: fixed;
-    top: 40%;  
+    top: 60%;  
     left: 10%;
     width: 80%;
     height: 10%;
@@ -274,7 +274,32 @@ body.theme-duk {
     
     /* Positioning */
     position: fixed;
-    top: 60%;  
+    top: 30%;  
+    left: 10%;
+    width: 80%;
+    height: 10%;
+}
+
+.email {
+    color: #ffffff;
+    background-color: var(--password);
+    font-size: 16px;
+    font-weight: 50;   
+    border-radius: 5px;
+    
+    border: none;
+    outline: none;
+    
+    font-family: 'Noto Sans', sans-serif;
+    
+    height: 40px; 
+    display: flex;
+    align-items: center; 
+    padding-left: 15px;   /* Moves text inside from left */
+    
+    /* Positioning */
+    position: fixed;
+    top: 45%;  
     left: 10%;
     width: 80%;
     height: 10%;
