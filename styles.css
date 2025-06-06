@@ -78,7 +78,7 @@ body.theme-duk {
     --all-channels: #99e7fd;
     --channels: #99e7fd;
     --body-color: none; /* #77e1ff */
-    --body-image: url("./assets/duks.jpg");
+    --body-image: url("./assets/themes/duks.jpg");
     --users-gradient: linear-gradient(to right, #8CCBEA, #C9F3FF);
     --channels-gradient: linear-gradient(to left, #8CCBEA,  #C9F3FF);
 }
