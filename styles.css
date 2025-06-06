@@ -1,6 +1,5 @@
 
-/* default thingys, defining the variables and giving them values */
-:root {
+body.theme-default {
     --button-bg: url("https://i.pinimg.com/736x/e1/7e/d1/e17ed16c4780bdd5dc791dac1862e40e.jpg");
     --server-add: #341d5c;
     --highlights1: #150c25;
@@ -15,6 +14,7 @@
     --all-channels: #291749;
     --channels: #150c25;
     --body-color: #341d5c;
+    --body-image: none;
     --users-gradient: linear-gradient(to right, #291749, #150c25);
     --channels-gradient: linear-gradient(to left, #291749, #150c25);
 }
@@ -36,6 +36,7 @@ body.theme-rainbow {
     --all-channels: #ff9bf8;
     --channels: #ff9bf8;
     --body-color: #cbe8fd;
+    --body-image: none;
     --users-gradient: linear-gradient(to right, #ff6262, #ffa662, #ffed62, #87ff62, #62b8ff, #b186fc);
     --channels-gradient: linear-gradient(to left, #ff6262,  #ffa662, #ffed62, #87ff62, #62b8ff, #b186fc);
 }
@@ -56,6 +57,7 @@ body.theme-dark {
     --all-channels: #323232;
     --channels: #323232;
     --body-color: #131311;
+    --body-image: none;
     --users-gradient: linear-gradient(to right, #000000, #131313);
     --channels-gradient: linear-gradient(to left, #000000,  #131313);
 }
@@ -75,8 +77,8 @@ body.theme-duk {
     --done-button: #27d0ff;
     --all-channels: #99e7fd;
     --channels: #99e7fd;
-   /* --body-color: #77e1ff;*/
-    --body-image: url("https://cdn.discordapp.com/attachments/1301576698529058858/1379027817508896849/image.jpg?ex=683ebf3c&is=683d6dbc&hm=8cc6ca8d30aca39583ee4ef630a0374c29180441731db74129fad9daf4b4cdec&");
+    --body-color: none; /* #77e1ff */
+    --body-image: url("./assets/duks.jpg");
     --users-gradient: linear-gradient(to right, #8CCBEA, #C9F3FF);
     --channels-gradient: linear-gradient(to left, #8CCBEA,  #C9F3FF);
 }

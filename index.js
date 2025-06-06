@@ -24,10 +24,11 @@ function sendMessage() {
     ;
 }
 
-
-document.body.className = "theme-rainbow";
-document.body.className = "theme-dark";
-document.body.className = "theme-duk";
+//document.body.className = "theme-default";
+//document.body.className = "theme-rainbow";
+//document.body.className = "theme-dark";
+//document.body.className = "theme-duk";
+//-> THIS IS SO MEANIE STUFF BUT I DONT WANNA DELETE IT SO IGNORE IT OKAI?
 
 //i just needa save this somewhere so i wont lose it whoopsie
 //<button onclick="document.body.className = 'theme-rainbow'">Rainbow :D</button>

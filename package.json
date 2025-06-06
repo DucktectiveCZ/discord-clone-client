@@ -1,12 +1,7 @@
 {
   "name": "messenger-frontend",
   "version": "1.0.0",
-  "description": "duk n bee stuff",
-  "main": "main.js",
-  "scripts": {
-    "start": "electron ."
-  },
-  "devDependencies": {
-    "electron": "^latest_version"
-  }
+  "description": "duk n bee stuff"
+  
+  
 }
