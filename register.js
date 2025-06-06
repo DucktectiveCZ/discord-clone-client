@@ -5,5 +5,7 @@ function done_button_click() {
   const password = document.getElementById("input_password").textContent;
   const email = document.getElementById("input_email").textContent;
   const displayName = document.getElementById("input_displayName").textContent;
-  register(username, password, email, displayName)
+  const pronouns = document.getElementById("input_pronouns").textContent;
+  register(username, password, email, displayName, pronouns)
 }
+

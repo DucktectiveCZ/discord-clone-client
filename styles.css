@@ -223,10 +223,38 @@ body.theme-duk {
     
     /* Positioning */
     position: fixed;
-    top: 15%;  /* Moves it to bottom instead of 'top: 91%' */
+    top: 10%;  /* Moves it to bottom instead of 'top: 91%' */
     left: 10%;
     width: 80%;
 }
+
+  
+
+.pronouns{
+    color: #ffffff;
+    background-color: var(--nick);
+    font-size: 16px;
+    font-weight: 50;   
+    border-radius: 5px;
+    
+    border: none;
+    outline: none;
+    
+    font-family: 'Noto Sans', sans-serif;
+    
+    height: 40px; 
+    display: flex;
+    align-items: center;  
+    padding-left: 15px;   /* Moves text inside from left */
+    
+    /* Positioning */
+    position: fixed;
+    top: 70%;  
+    left: 10%;
+    width: 81.5%;
+    height: 10%;
+}
+
 
 /* register nickname line thingy */
 .displayName {
@@ -248,7 +276,7 @@ body.theme-duk {
     
     /* Positioning */
     position: fixed;
-    top: 60%;  
+    top: 55%;  
     left: 10%;
     width: 80%;
     height: 10%;
@@ -274,7 +302,7 @@ body.theme-duk {
     
     /* Positioning */
     position: fixed;
-    top: 30%;  
+    top: 25%;  
     left: 10%;
     width: 80%;
     height: 10%;
@@ -299,7 +327,7 @@ body.theme-duk {
     
     /* Positioning */
     position: fixed;
-    top: 45%;  
+    top: 40%;  
     left: 10%;
     width: 80%;
     height: 10%;

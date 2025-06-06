@@ -1,12 +1,12 @@
 const api_url = "http://localhost:8080/api/v1"
 
-export function register(username, password, email, displayName) {
+export function register(username, password, email, displayName, pronouns) {
     fetch(api_url+"/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json" 
         },
-        body: JSON.stringify({username:username, password:password})
+        body: JSON.stringify({username:username, password:password, email:email, displayName:displayName, pronouns:pronouns})
       })
       .then(response => {
         if (!response.ok) {

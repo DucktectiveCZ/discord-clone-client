@@ -5,25 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <script src="register.js" defer></script>
+    <script type="module" src="register.js" defer></script>
 </head>
 <!--to switch theme manually just in the body tag: class="{theme}" -->  
 <body>
-    
+
     <h1 class="headline">
         Register
     </h1>
     
     <input class="user" type="text" class="chat-input" placeholder="username" id="input_username">  </input>
     
-    <input class="password" type="text" class="chat-input" placeholder="password" id="input_password">  </input>
+    <input class="password" type="password" class="chat-input" placeholder="password" id="input_password">  </input>
 
     <input class="email" type="text" class="chat-input" placeholder="email" id="input_email">  </input>
 
     <input class="displayName" type="text" class="chat-input" placeholder="display name" id="input_displayName">  </input>
     
-    
+    <label for="pronouns" id="input_pronouns">  </label>
+    <select name="pronouns" id="pronouns" class="pronouns">
+        <option value="" disabled selected hidden>choose your pronouns</option>
+        <option value="she/her">she/her</option>
+        <option value="she/they">she/they</option>
+        <option value="he/him">he/him</option>
+        <option value="he/they">he/they</option>
+        <option value="they/them">they/them</option>
+        <option value="it/its">it/its</option>
+        <option value="xe/xir">xe/xir</option>
+        <option value="ze/zir">ze/zir</option>
+        <option value="ey/em">ey/em</option>
+        <option value="fae/faer">fae/faer</option>
+        <option value="nounself pronouns">nounself pronouns</option>
+        <option value="ask">ask for pronouns</option>
+    </select>
 
+    
     <button onclick="done_button_click()" class="done-button">Done</button>
 
 
